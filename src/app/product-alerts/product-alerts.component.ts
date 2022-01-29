@@ -6,6 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./product-alerts.component.css'],
 })
 export class ProductAlertsComponent implements OnInit {
+  @Input() prodcut!: Product;
   constructor() {}
 
   ngOnInit(): void {}
