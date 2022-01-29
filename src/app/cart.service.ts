@@ -18,4 +18,10 @@ export class CartService {
     this.items = [];
     return this.items;
   }
+
+  getShippingPrices() {
+    return this.http.get<{ type: string; price: number }[]>(
+      '/assets/shippings.json'
+    );
+  }
 }
